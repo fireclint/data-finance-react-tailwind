@@ -42,15 +42,17 @@ const Hero = () => {
 
     {/* default - mobile */}
     <div className='w-[100hw] h-[100vh]  sm:hidden lg:hidden flex flex-col  bg-slate-900 '>
-    <img src='/images/hero/hero4.jpg' className='w-full h-[1900px] object-cover object-center   sm:hidden opacity-50 ' alt=''  />
+    <img src='/images/hero/hero4.jpg' className='w-full h-[1900px] object-cover object-center   sm:hidden opacity-50
+    
+    ' alt=''  />
 
-      <div className=' h-[100vh] w-[100hw]  items-center  justify-center space-y-4'>
+      <div className=' h-[100vh] w-[100hw]  items-center  justify-center space-y-4 pb-3'>
         <h1 className='text-2xl text-blue-400 font-normal items-center text-center flex flex-col mx-7 tracking-wider'>TASPro Technologies</h1>
         <div className='text-center leading-10 tracking-wider'>
         <p className='text-base text-slate-600 text-center flex-col font-light items-center flex-wrap mx-7 flex  '>Delivering business  value  through <br />
-        <span className='text-[28px] font-poppins font-bold text-blue-800 bg-slate-100 p-1 rounded-lg  opacity-80'>Technology</span></p>
+        <span className='text-[28px] font-poppins font-bold text-blue-800 bg-slate-100 p-4 rounded-lg  opacity-80'>Technology</span></p>
         </div>
-        <button className='w-36 h-10 bg-blue-500 rounded-[25px] p-2 text-white font-poppins tracking-wide shadow-2xl hover:text-blue-500 hover:bg-white opacity-80 items-center justify-center m-auto flex'>Contact us</button>
+        <button className='w-28 h-10 bg-blue-500 rounded-[35px] p-2 text-white font-poppins tracking-wide shadow-2xl hover:text-blue-500 hover:bg-white opacity-80 items-center justify-center m-auto flex'>Contact us</button>
       </div>
 
     </div>
