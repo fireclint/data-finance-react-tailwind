@@ -98,19 +98,19 @@ export default function Example() {
 <div className={navbar ? 'navbar active' : 'navbar' }>
 <Popover className="relative ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="flex items-center justify-between    md:justify-start md:space-x-10">
+        <div className="flex items-center justify-between   py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-20 z-50 w-auto sm:h-20"
+                className="h-10 z-50 w-auto sm:h-10"
                 src="images/logo/TASPro Logo.png"
                 alt=""
               />
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md  p-2  hover:bg-grey-100 hover:text-blue-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-300">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md  p-2  hover:bg-grey-100 hover:text-rose-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-300">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -122,14 +122,14 @@ export default function Example() {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-grey-600' : 'text-grey-500',
-                      'group inline-flex items-center rounded-md  text-base font-medium hover:text-grey-500 focus:outline-none focus:ring-2 focus:ring-blue-600 p-1 '
+                      'group inline-flex items-center rounded-md  text-base font-medium hover:text-grey-500 focus:outline-none focus:ring-2 focus:ring-rose-500 '
                     )}
                   >
-                    <span className='font-poppins font-bold hover:text-blue-600'>Solutions</span>
+                    <span>Solutions</span>
                     <ChevronDownIcon
                       className={classNames(
-                        open ? 'text-blue-600' : 'text-blue-400',
-                        'ml-2 h-5 w-5 group-hover:text-blue-600'
+                        open ? 'text-grey-600' : 'text-rose-300',
+                        'ml-2 h-5 w-5 group-hover:text-rose-300'
                       )}
                       aria-hidden="true"
                     />
@@ -153,7 +153,7 @@ export default function Example() {
                               href={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                             >
-                              <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
+                              <item.icon className="h-6 w-6 flex-shrink-0 text-rose-600" aria-hidden="true" />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -181,10 +181,10 @@ export default function Example() {
               )}
             </Popover>
 
-            <a href="#" className="text-base  hover:text-blue-600 top-2 font-poppins font-semibold relative">
+            <a href="#" className="text-base font-medium  hover:text-rose-300 top-2  relative">
               Our Clients
             </a>
-            <a href="#" className="text-base font-poppins font-semibold   hover:text-blue-600 top-2 relative">
+            <a href="#" className="text-base font-medium  hover:text-rose-300 top-2 relative">
               Docs
             </a>
 
@@ -194,13 +194,13 @@ export default function Example() {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-grey-600' : 'text-grey-500',
-                      'group inline-flex items-center rounded-md  text-base font-medium hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 p-1'
+                      'group inline-flex items-center rounded-md  text-base font-medium hover:text-rose-300 focus:outline-none focus:ring-2 focus:ring-rose-500 '
                     )}
                   >
-                    <span className='font-poppins font-semibold'>More</span>
+                    <span>More</span>
                     <ChevronDownIcon
                       className={classNames(
-                        open ? 'text-blue-600' : 'text-blue-400',
+                        open ? 'text-rose-600' : 'text-rose-400',
                         'ml-2 h-5 w-5 group-hover:text-white-500'
                       )}
                       aria-hidden="true"
@@ -225,7 +225,7 @@ export default function Example() {
                               href={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                             >
-                              <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
+                              <item.icon className="h-6 w-6 flex-shrink-0 text-rose-600" aria-hidden="true" />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -247,7 +247,7 @@ export default function Example() {
                             </ul>
                           </div>
                           <div className="mt-5 text-sm">
-                            <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
+                            <a href="#" className="font-medium text-rose-600 hover:text-rose-500">
                               View all posts
                               <span aria-hidden="true"> &rarr;</span>
                             </a>
@@ -264,7 +264,7 @@ export default function Example() {
            
             <a
               href="#"
-              className="font-poppins font-semibold ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-[#10426b] px-4 py-2 text-base  text-white shadow-sm hover:bg-blue-600"
+              className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-[#f43f5e] px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-rose-600"
             >
               Contact us
             </a>
@@ -293,7 +293,7 @@ export default function Example() {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
                     <span className="sr-only">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -307,7 +307,7 @@ export default function Example() {
                       href={item.href}
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                     >
-                      <item.icon className="h-6 w-6 flex-shrink-0 text-blue-500" aria-hidden="true" />
+                      <item.icon className="h-6 w-6 flex-shrink-0 text-rose-500" aria-hidden="true" />
                       <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
                     </a>
                   ))}
@@ -336,13 +336,13 @@ export default function Example() {
               <div>
                 <a
                   href="#"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-rose-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-rose-700"
                 >
                   Sign up
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
-                  <a href="#" className="text-blue-600 hover:text-blue-500">
+                  <a href="#" className="text-rose-600 hover:text-rose-500">
                     Sign in
                   </a>
                 </p>

@@ -1,0 +1,35 @@
+.navbar {
+    height: 80px;
+    font-size: 1.5rem;
+    top: 0px;
+    z-index: 999;
+    color: #0a104a;
+    font-family: 'Poppins';
+    background-color: rgba(255, 255, 255, 0.85);
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    font-weight: 600;
+}
+
+
+
+.navbar.active {
+    background: rgba(255, 255, 255, 0.902);
+    height:80px;
+    color: rgb(46, 46, 46);
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    
+    
+    box-shadow: 2px 2px 9px .5xp lightcoral;
+}
+
+
+
+
+/* 
+flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-rose-400 bg-transparent fixed left-2 right-2 navbar active
+*/
+
